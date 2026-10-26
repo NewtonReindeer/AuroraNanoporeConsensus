@@ -41,6 +41,7 @@ The following programs are required for the relevant analysis workflows:
 
 - Minimap2 — sequence alignment
 - SAMtools — alignment file processing
+- BCFtools - independent variant calling, particularly within the CMV analysis workflow
 - Medaka (`medaka_consensus`) — consensus generation
 - NCBI BLAST+ — database searching and reference-based analysis where used
 
