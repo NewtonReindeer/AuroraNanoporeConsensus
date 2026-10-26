@@ -1,0 +1,7 @@
+Compilation: OK
+Definition mapping: 113 moved definitions are AST-identical
+Non-GUI imports: OK
+behavior comparisons: 33 OK
+GUI import: validated with temporary PySide6 and generated-UI stubs; no stubs are included in the deliverable.
+Scientific thresholds/panels: values copied into config.py without modification.
+Original source: retained byte-for-byte as original_monolith.py.

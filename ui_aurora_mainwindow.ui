@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>573</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Aurora - Universal Virus Identification System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="outerLayout">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="bannerLabel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background-color: #2eb;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Aurora/images:/croppeddeeraurora.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Aurora</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="subtitleLabel">
+      <property name="text">
+       <string>Universal Bioinformatic Tool For Nanopore Data</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="settingsBox">
+      <property name="title">
+       <string>Pipeline settings</string>
+      </property>
+      <layout class="QFormLayout" name="settingsForm">
+       <item row="0" column="0">
+        <widget class="QLabel" name="virusLabel">
+         <property name="text">
+          <string>Virus type:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="virus_combo">
+         <item>
+          <property name="text">
+           <string>Adenovirus</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Hepatitis B Virus</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Hepatitis C Virus</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Other</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="modeLabel">
+         <property name="text">
+          <string>Analysis mode:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="mode_combo">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>Full Pipeline</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="inputLabel">
+         <property name="text">
+          <string>Input folder:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QWidget" name="inputFieldWidget" native="true">
+         <layout class="QHBoxLayout" name="inputFieldLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="input_edit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="input_browse_button">
+            <property name="text">
+             <string>Browse...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="outputLabel">
+         <property name="text">
+          <string>Output folder:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QWidget" name="outputFieldWidget" native="true">
+         <layout class="QHBoxLayout" name="outputFieldLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="output_edit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="output_browse_button">
+            <property name="text">
+             <string>Browse...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="referenceLabel">
+         <property name="text">
+          <string>Reference folder:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QWidget" name="referenceFieldWidget" native="true">
+         <layout class="QHBoxLayout" name="referenceFieldLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="reference_edit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="reference_browse_button">
+            <property name="text">
+             <string>Browse...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="medakaLabel">
+         <property name="text">
+          <string>Medaka model:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="medaka_combo">
+         <property name="maxVisibleItems">
+          <number>15</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_sup_v5.2.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_hac_v5.0.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_sup_v4.3.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_sup_v5.0.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_sup_v4.2.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_sup_v3.5.1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_sup_variant_v4.2.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_hac_v4.2.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_hac_variant_v4.2.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_fast_g632</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_400bps_fast_variant_g632</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_260bps_sup_v4.1.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_260bps_sup_variant_v4.1.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_260bps_hac_v4.1.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_260bps_hac_variant_v4.1.0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_260bps_fast_g632</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r1041_e82_260bps_fast_variant_g632</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_min_fast_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_min_fast_variant_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_min_hac_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_min_hac_variant_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_min_sup_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_min_sup_variant_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_prom_fast_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_prom_fast_variant_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_prom_hac_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_prom_hac_variant_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_prom_sup_g507</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>r941_prom_sup_variant_g507</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QCheckBox" name="ncbi_checkbox">
+         <property name="text">
+          <string>Run NCBI pipeline after consensus</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonRow">
+      <item>
+       <widget class="QPushButton" name="check_button">
+        <property name="text">
+         <string>Check dependencies</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="clear_button">
+        <property name="text">
+         <string>Clear log</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="run_button">
+        <property name="text">
+         <string>Run pipeline</string>
+        </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="buttonSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="progress">
+      <property name="styleSheet">
+       <string notr="true">QProgressBar {
+    background-color: #10131c;
+    border: 1px solid #394056;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+QProgressBar::chunk {
+    border-radius: 9px;
+
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0.00 #7c3aed,
+        stop: 0.20 #ec4899,
+        stop: 0.42 #22d3ee,
+        stop: 0.65 #34d399,
+        stop: 0.82 #38bdf8,
+        stop: 1.00 #8b5cf6
+    );
+}</string>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="format">
+       <string>Ready</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="log">
+      <property name="font">
+       <font>
+        <family>Menlo</family>
+       </font>
+      </property>
+      <property name="lineWrapMode">
+       <enum>QPlainTextEdit::LineWrapMode::NoWrap</enum>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

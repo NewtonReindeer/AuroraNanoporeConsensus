@@ -1,0 +1,150 @@
+{
+  "__init__.py": [],
+  "__main__.py": [],
+  "alignment.py": [
+    "reference_consumed_by_cigar",
+    "query_aligned_consumed_by_cigar",
+    "evaluate_alignment_quality",
+    "calculate_reference_breadth_coverage_percent",
+    "empty_depth_stats",
+    "calculate_depth_stats",
+    "merge_depth_values",
+    "get_depth_values_for_region",
+    "calculate_multi_region_depth_stats",
+    "detect_aligned_target_region_from_sam",
+    "read_codon_from_aligned_segment"
+  ],
+  "app.py": [
+    "main"
+  ],
+  "config.py": [],
+  "consensus.py": [
+    "normalise_dorado_model_to_medaka",
+    "detect_medaka_model_from_fastq",
+    "choose_medaka_model",
+    "generate_iub_consensus_from_bam",
+    "generate_consensus"
+  ],
+  "external_tools.py": [
+    "which_or_none",
+    "check_required_tools",
+    "safe_remove",
+    "run_ncbi_database_script"
+  ],
+  "fasta.py": [
+    "read_single_fasta_sequence",
+    "read_named_fasta_sequence",
+    "fasta_sequence_stats",
+    "translate_codon",
+    "circular_subseq",
+    "circular_codon"
+  ],
+  "filesystem.py": [
+    "app_base_dir",
+    "ensure_dir",
+    "path_exists_any",
+    "is_real_fastq_gz",
+    "is_real_fasta",
+    "find_files_recursively",
+    "count_fastq_bases",
+    "build_run_tag",
+    "allocate_run_identity",
+    "safe_report_filename",
+    "run_samples_folder",
+    "run_consensus_folder",
+    "is_valid_report_image",
+    "export_run_consensus_files",
+    "find_hbv_report_logo",
+    "image_file_to_data_uri",
+    "concatenate_fasta_files",
+    "split_fasta"
+  ],
+  "gui.py": [
+    "ConsoleStream",
+    "NativeOutputCapture",
+    "PipelineWorker",
+    "AuroraWindow"
+  ],
+  "hbv.py": [
+    "hbv_medication_summary",
+    "parse_hbv_metadata_tsv",
+    "parse_hbv_metadata_from_fasta_header",
+    "get_hbv_reference_metadata",
+    "call_hbv_aa_position_from_bam",
+    "format_hbv_position_call",
+    "determine_hbv_interpretation",
+    "analyse_hbv_mutations",
+    "hbv_swedish_evidence_label",
+    "hbv_translate_free_text",
+    "hbv_population_label",
+    "hbv_panel_reference_aa",
+    "hbv_detected_calls",
+    "hbv_swedish_interpretation",
+    "hbv_rt_call_index",
+    "hbv_pattern_mutation_text",
+    "hbv_pattern_max_frequency",
+    "hbv_apply_population_context",
+    "hbv_combination_interpretations",
+    "hbv_combination_summary_text",
+    "hbv_status_for_medication"
+  ],
+  "hcv.py": [
+    "calculate_hcv_amplicon_breadth_coverage_percent",
+    "hcv_amplicon_consensus_stats",
+    "hcv_subtype_from_name",
+    "read_fastq_stats",
+    "calculate_median_nonzero_depth",
+    "parse_hcv_metadata_tsv",
+    "parse_hcv_metadata_from_fasta_header",
+    "get_hcv_reference_metadata",
+    "call_hcv_ns5a_position_from_bam",
+    "format_hcv_position_call",
+    "determine_hcv_interpretation",
+    "hcv_candidate_ns5a_starts",
+    "call_hcv_panel_for_start",
+    "score_hcv_ns5a_start",
+    "locate_hcv_ns5a_start",
+    "hcv_panel_labels_for_subtype",
+    "choose_hcv_panel_result",
+    "analyse_hcv_resistance"
+  ],
+  "legacy_api.py": [],
+  "models.py": [
+    "DepthStats",
+    "SampleResult"
+  ],
+  "pipeline.py": [
+    "add_hbv_system_stats_to_row",
+    "process_sample",
+    "run_full_pipeline"
+  ],
+  "qc.py": [
+    "expected_target_length_for_qc",
+    "calculate_hbv_system_depth_stats",
+    "empty_hbv_system_stats",
+    "hbv_system_qc_flags",
+    "determine_qc_verdict"
+  ],
+  "reporting_excel.py": [
+    "coverage_fill",
+    "qc_fill",
+    "autosize_worksheet",
+    "log_reference_usage",
+    "log_hcv_resistance_results",
+    "log_hbv_mutation_results"
+  ],
+  "reporting_html.py": [
+    "hcv_detected_calls",
+    "hcv_html_summary",
+    "hcv_status_class",
+    "hcv_panel_coverage_html",
+    "hcv_medication_rows_html",
+    "write_hcv_html_report",
+    "generate_hcv_html_reports",
+    "hbv_combination_rows_html",
+    "hbv_pedagogical_interpretation_html",
+    "hbv_overall_summary",
+    "hbv_panel_coverage_rows",
+    "write_hbv_html_report"
+  ]
+}

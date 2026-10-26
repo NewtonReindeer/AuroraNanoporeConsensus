@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/images">
+    <file>images:/NewtTransparent1.png</file>
+  </qresource>
+  <qresource prefix="Aurora">
+    <file>images:/IMG_0358.PNG</file>
+    <file>images:/croppeddeeraurora.png</file>
+    <file>images:/IMG_0357.JPG</file>
+  </qresource>
+</RCC>

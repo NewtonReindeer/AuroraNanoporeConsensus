@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.0",
+  "release_status": "annotation_catalogue",
+  "reference_protein_numbering": "CMV UL97/UL54 standard amino-acid numbering; reference mapping must be maintained in the analysis pipeline",
+  "scope": "Four literature-curated entries; not a comprehensive resistance catalogue",
+  "sample_evidence_policy": "Sample-specific BAM counts and detection confirmation belong in the report, not in this shared annotation catalogue.",
+  "mutations": [
+    {
+      "gene": "UL97",
+      "mutation": "M460I",
+      "category": "resistance",
+      "label": "Resistensassocierad",
+      "drugs": [
+        "Ganciklovir",
+        "Valganciklovir"
+      ],
+      "drug_evidence": [
+        {
+          "drug": "Ganciklovir",
+          "interpretation": "reduced_susceptibility",
+          "fold_change_ec50": 7.8,
+          "source_pmid": "21041510"
+        },
+        {
+          "drug": "Valganciklovir",
+          "interpretation": "prodrug_of_ganciclovir",
+          "fold_change_ec50": null,
+          "source_pmid": "21041510"
+        }
+      ],
+      "evidence_level": "recombinant_phenotype",
+      "sources": [
+        {
+          "type": "peer_reviewed_primary",
+          "title": "Cytomegalovirus UL97 Mutations Affecting Cyclopropavir and Ganciclovir Susceptibility",
+          "pmid": "21041510",
+          "pmcid": "PMC3019618",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3019618/",
+          "location": "Table 1, M460I recombinant phenotype"
+        }
+      ],
+      "note": "Etablerad UL97-association med nedsatt känslighet för ganciklovir. Valganciklovir är en prodrug till ganciklovir. Fyndets läsunderlag redovisas separat i provrapporten."
+    },
+    {
+      "gene": "UL54",
+      "mutation": "N685S",
+      "category": "polymorphism",
+      "label": "Känd polymorfism – ingen påvisad resistensassociation",
+      "drugs": [],
+      "drug_evidence": [],
+      "evidence_level": "published_known_polymorphism_not_individually_phenotyped",
+      "observed_subjects_in_study": 177,
+      "study_subjects": 275,
+      "sources": [
+        {
+          "type": "peer_reviewed_primary",
+          "title": "Phenotypic Evaluation of Previously Uncharacterized Cytomegalovirus DNA Polymerase Sequence Variants Detected in a Valganciclovir Treatment Trial",
+          "pmid": "24273181",
+          "doi": "10.1093/infdis/jit654",
+          "pmcid": "PMC3969548",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3969548/",
+          "location": "Table 1, known UL54 polymorphisms"
+        }
+      ],
+      "note": "Listad som känd polymorfism i tabell 1; studien anger att denna grupp inte påverkar läkemedelskänslighet. Detta är inte ett separat rekombinant fenotyptest av just denna substitution och bevisar inte känslighet för alla läkemedel."
+    },
+    {
+      "gene": "UL54",
+      "mutation": "S655L",
+      "category": "polymorphism",
+      "label": "Känd polymorfism – ingen påvisad resistensassociation",
+      "drugs": [],
+      "drug_evidence": [],
+      "evidence_level": "published_known_polymorphism_not_individually_phenotyped",
+      "observed_subjects_in_study": 151,
+      "study_subjects": 275,
+      "sources": [
+        {
+          "type": "peer_reviewed_primary",
+          "title": "Phenotypic Evaluation of Previously Uncharacterized Cytomegalovirus DNA Polymerase Sequence Variants Detected in a Valganciclovir Treatment Trial",
+          "pmid": "24273181",
+          "doi": "10.1093/infdis/jit654",
+          "pmcid": "PMC3969548",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3969548/",
+          "location": "Table 1, known UL54 polymorphisms"
+        }
+      ],
+      "note": "Listad som känd polymorfism i tabell 1; studien anger att denna grupp inte påverkar läkemedelskänslighet. Detta är inte ett separat rekombinant fenotyptest av just denna substitution och bevisar inte känslighet för alla läkemedel."
+    },
+    {
+      "gene": "UL54",
+      "mutation": "P628L",
+      "category": "polymorphism",
+      "label": "Känd polymorfism – ingen påvisad resistensassociation",
+      "drugs": [],
+      "drug_evidence": [],
+      "evidence_level": "published_known_polymorphism_not_individually_phenotyped",
+      "observed_subjects_in_study": 9,
+      "study_subjects": 275,
+      "sources": [
+        {
+          "type": "peer_reviewed_primary",
+          "title": "Phenotypic Evaluation of Previously Uncharacterized Cytomegalovirus DNA Polymerase Sequence Variants Detected in a Valganciclovir Treatment Trial",
+          "pmid": "24273181",
+          "doi": "10.1093/infdis/jit654",
+          "pmcid": "PMC3969548",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3969548/",
+          "location": "Table 1, known UL54 polymorphisms"
+        }
+      ],
+      "note": "Listad som känd polymorfism i tabell 1; studien anger att denna grupp inte påverkar läkemedelskänslighet. Detta är inte ett separat rekombinant fenotyptest av just denna substitution och bevisar inte känslighet för alla läkemedel."
+    }
+  ]
+}

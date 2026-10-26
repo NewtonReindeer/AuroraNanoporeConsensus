@@ -1,0 +1,11 @@
+sample	gene	mutation	expected_fraction	notes
+KV25-10030	UL97	M460I		Prior laboratory result; verify protein numbering
+KV25-10030	UL54	P552A		Prior laboratory result; investigate discrepancy with Aurora
+KV25-12215	UL97	L595S	0.8-0.9	Mixed L595L/S in prior results
+KV25-11949	UL97	L595S	0.5	Mixed L595L/S in prior results
+KV26-596	UL97	L595S	0.4	Mixed L595L/S in prior results
+KV25-10890	UL97	C592G	0.8-0.9	Mixed C592C/G in prior results
+KV25-11400	UL97	H520Q		Prior laboratory result
+KV25-10022	UL97	NONE		Prior negative CMV result; coverage must still be checked
+KV25-7229	UL54	NONE		No reported resistance mutation in prior method; assay coverage differs
+KV25-9908	UL97	NONE		No reported resistance mutation in prior method; assay coverage differs

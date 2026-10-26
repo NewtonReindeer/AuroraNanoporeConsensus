@@ -1,0 +1,21 @@
+# Ignore everything inside blastdb
+/blastdb/*
+
+#old versions and backups
+/OLD/
+
+# Keep the folder itself and its placeholder
+!/blastdb/.gitkeep
+
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Local archives
+Aurora3.2.zip
