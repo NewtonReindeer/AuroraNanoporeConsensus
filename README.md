@@ -171,4 +171,7 @@ The original monolithic implementation is retained in `original_monolith.py` for
 
 Developed and maintained by [NewtonReindeer](https://github.com/NewtonReindeer).
 
+Email: joakim.bedner.stenback@gu.se
+       Joakim.bedner.stenback@vgregion.se
+
 Repository: https://github.com/NewtonReindeer/AuroraNanoporeConsensus
